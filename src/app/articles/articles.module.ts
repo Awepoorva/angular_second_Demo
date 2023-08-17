@@ -6,6 +6,8 @@ import { HomeComponent } from './home/home.component';
 import { ViewArticlesComponent } from './view-articles/view-articles.component';
 import { CreateArticlesComponent } from './create-articles/create-articles.component';
 import { ListtitleComponent } from './listtitle/listtitle.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -13,11 +15,13 @@ import { ListtitleComponent } from './listtitle/listtitle.component';
     HomeComponent,
     ViewArticlesComponent,
     CreateArticlesComponent,
-    ListtitleComponent
+    ListtitleComponent,
   ],
   imports: [
     CommonModule,
-    ArticlesRoutingModule
+    ArticlesRoutingModule,
+    HttpClientModule,
+    FormsModule
   ]
 })
 export class ArticlesModule { }

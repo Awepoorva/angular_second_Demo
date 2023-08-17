@@ -6,9 +6,9 @@ import { ViewArticlesComponent } from './view-articles/view-articles.component';
 import { CreateArticlesComponent } from './create-articles/create-articles.component';
 
 const routes: Routes = [{ path: 'articles/home', component: HomeComponent },
-{ path: '/articles/createArticle', component: CreateArticlesComponent },
-{ path: '/articles/viewArticle', component: ViewArticlesComponent },
-{ path: '/articles/listTitle', component: ListtitleComponent }
+{ path: 'articles/createArticle', component: CreateArticlesComponent },
+{ path: 'articles/viewArticle', component: ViewArticlesComponent },
+{ path: 'articles/listTitle', component: ListtitleComponent },
 ];
 
 @NgModule({
